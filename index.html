@@ -13,7 +13,17 @@
 <body>
     <div class="container">
       <header>
-        <h1 class="title">ETCH-A-SKETCH</h1>
+        <div class="header-container">
+          <h1 class="title">ETCH-A-SKETCH</h1>
+          <button class="customize-button">Customize grid size</button>
+        </div>
+
+        <dialog class="modal-prompt">
+          <form class="form" method="dialog">
+            <label  class="prompt-label">Grid size:<input type="number" class="grid-size-input" placeholder="max. 100"></label>
+            <button class="prompt-button">Go</button>
+          </form>
+        </dialog>
       </header>
 
       <main>
@@ -27,5 +37,5 @@
       </footer>
 
     </div>
-</body>
-</html> 
+  </body>
+  </html> 

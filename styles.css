@@ -1,11 +1,60 @@
+body {
+  font-family: Roboto, sans-serif;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space;
+}
+
 .title {
   font-family: 'Press Start 2P', monospace;
+  text-align: center;
+  padding: 1em 50px;
+}
+
+.customize-button {
+  font-family: inherit;
+  padding: 1rem;
+  margin: auto;
+  margin-bottom: 2rem;
+  outline: none;
+}
+
+main {
+  align-items: center;
+}
+
+.modal-prompt {
+  font-family: inherit;
+  filter:drop-shadow(2px 2px rgb(0 0 0 / 20%));
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input {
+  outline: none;
+}
+
+.grid-size-input {
+  margin-left: 10px;
+}
+
+.prompt-label {
+  font-size: 14px;
 }
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(16, 1fr);
+  /* grid-template-columns: repeat(16, 1fr); */
   border: .5px solid black;
+  width: 94vw;
+  margin: auto;
 }
 
 .box {
@@ -16,4 +65,5 @@
 
 .box-filled {
   background-color: pink;
+  transition: 0.2s;
 }
