@@ -2,10 +2,16 @@ body {
   font-family: Roboto, sans-serif;
 }
 
+.container {
+  width: 94vw;
+  margin: auto;
+}
+
 .header-container {
   display: flex;
   flex-direction: column;
   justify-content: space;
+  flex-wrap: wrap-reverse;
 }
 
 .title {
@@ -51,9 +57,9 @@ input {
 
 .grid {
   display: grid;
-  /* grid-template-columns: repeat(16, 1fr); */
   border: .5px solid black;
-  width: 94vw;
+  width: 100%;
+  max-width: 600px;
   margin: auto;
 }
 
@@ -63,7 +69,7 @@ input {
   aspect-ratio: 1;
 }
 
-.box-filled {
+/* .box-filled {
   background-color: pink;
   transition: 0.2s;
-}
+} */
